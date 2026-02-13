@@ -1,0 +1,295 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+  text-align: center;
+  color: #ff4e88;
+}
+
+.container {
+  padding-top: 80px;
+  animation: fadeIn 2s ease;
+  
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff4e88;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.gallery {
+  margin-top: 40px;
+}
+
+.gallery img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.letter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,192,203,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-content {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 400px;
+  animation: slideUp 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+button {
+  min-height: 44px; /* standar mobile touch */
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+    z-index: 0;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(100px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+.lockscreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #ff4e88;
+  color: white;
+  
+}
+
+.music-player {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+.fade {
+  animation: fadeIn 2s ease;
+}
+
+.timer {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.love-meter {
+  margin-top: 30px;
+}
+
+.bar {
+  width: 250px;
+  height: 20px;
+  background: #ffd1dc;
+  border-radius: 20px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#loveFill {
+  height: 100%;
+  width: 0%;
+  background: #ff4e88;
+  transition: width 0.5s;
+}
+
+.music-player {
+  margin-top: 40px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.controls button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+
+#progress {
+  width: 250px;
+}
+.music-card {
+  width: 320px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 78, 136, 0.2);
+  color: #ff4e88;
+}
+
+.music-card h3 {
+  margin: 5px 0;
+}
+
+.music-card p {
+  margin: 5px 0;
+}
+
+.lyrics-box {
+  height: 120px;
+  overflow-y: auto;
+  background: #ffe6f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#progress {
+  width: 85%;
+  margin-top: 10px;
+  
+}
+#progress::-webkit-slider-runnable-track {
+  height: 15px;
+  border-radius: 10px;
+}
+/* Track (background garis) */
+#progress {
+  -webkit-appearance: none;
+  width: 85%;
+  height: 0px;
+  background: #ffd1dc;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Thumb (bulatan yang digeser) */
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ff4e88;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+/* Firefox */
+#progress::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #ff4e88;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#progress::-moz-range-track {
+  background: #ffd1dc;
+  height: 6px;
+  border-radius: 10px;
+}
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .music-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .lyrics-box {
+    height: 100px;
+    font-size: 13px;
+  }
+
+  .bar {
+    width: 100%;
+  }
+
+  #progress {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .letter-content {
+    width: 90%;
+    padding: 20px;
+  }
+}

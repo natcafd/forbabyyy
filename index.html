@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babbyyy 💕</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
+</head>
+<body>
+<canvas id="hearts"></canvas>
+
+<!-- PASSWORD SCREEN -->
+<div id="lockscreen" class="lockscreen">
+    <div class="music-card">
+        <h2>Masukkan Tanggal Jadian Kita 💖</h2>
+        <input type="password" id="password" placeholder="DD-MM-YYYY">
+        <button onclick="checkPassword()">Masuk</button>
+        <p id="error"></p>
+    </div>
+ 
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="mainContent" class="hidden fade">
+
+<canvas id="hearts"></canvas>
+
+<div class="container">
+    <div class="music-card">
+        <h1>Happy Valentine 💖</h1>
+        <h2>Dinda Amellia</h2>
+        <p id="typing"></p>
+        <button onclick="openLetter()">Klik Ini Dulu Sayang 💌</button>
+    </div>
+ 
+
+  <!-- RELATIONSHIP TIMER -->
+    <div class="timer">
+        <div class="music-card">
+            <h3>Dibawah ini sayang waktu bersama kita babyyy 💕</h3>
+            <p id="relationshipTime"></p>
+        </div>
+    </div>
+
+
+  <!-- LOVE METER -->
+  <div class="love-meter">
+    <div class="music-card">
+    <h3>Love Meter 💗</h3>
+    <div class="bar">
+      <div id="loveFill"></div>
+    </div>
+    <button onclick="increaseLove()">Tambah Cinta 💖</button>
+    </div>
+  </div>
+
+  <!-- MUSIC PLAYER -->
+<div class="music-card">
+  <h3 id="songTitle">Judul Lagu</h3>
+  <p id="songArtist">Penyanyi</p>
+
+  <div class="lyrics-box">
+    <p id="lyrics"></p>
+  </div>
+
+  <input type="range" id="progress" value="0">
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="togglePlay()">▶⏸</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+
+  <p id="timeDisplay">0:00 / 0:00</p>
+</div>
+
+<!--Galery-->
+<div class="music-card">
+<div class="gallery">
+    <img src="images/1.jpg">
+    <img src="images/2.jpg">
+    <img src="images/3.jpg">
+    <img src="images/4.jpg">
+    <img src="images/5.jpg">
+    <img src="images/6.jpg">
+    <img src="images/7.jpg">
+    <img src="images/8.jpg">
+    <img src="images/9.jpg">
+    <img src="images/10.jpg">
+    <img src="images/11.jpg">
+    <img src="images/12.jpg">
+    <img src="images/13.jpg">
+  </div>
+</div>
+ 
+</div>
+
+<div id="letter" class="letter hidden">
+  <div class="letter-content">
+    <h2>Untuk Babyyy sayangg ❤️</h2>
+    <p>
+      <strong>02-08-2024</strong>
+      yayyy happy valentinee dayy sayanggg
+      tenang aja kokk sayangg acaaa gakk lupa sama babyyy
+      gimanaa sayangg gakk kerasaa yaa kita udah 500 harian loh bareng
+      tapii yaa kayak ngerasanyaa cepet bangett dari awal sayang kuliahh
+      sampe sekarang sayangg.
+      
+      gimanaa sayangg sukaa gak sama website inii ehehehe
+      udah lama banget ya acaaa gak ngodingg buatt babyy eheheh
+      TAPII, <strong>HAPPYY VALENTINE SAYANGG❤️</strong>
+      acaaa mauu kitaa kedepannya bisaa lebihh baiikk lagii yaa sayanggg
+      kitaa gapapaa kokk berantemm, marahh marahann, gapapaa bangett
+      asal kita <strong>JANGAN PISAH</strong> okeeii babyyy?
+      mau gimanapun kondisinya, mauu kayak gimanaa kita sekarangg
+      acaaa tetepp sayanggg babbyyyy.
+      <h1 style="align-items: center;"></h1><strong>acaaa sayanggg babyyyy</strong>
+      💕
+    </p>
+    <button onclick="closeLetter(); togglePlay();">ndaaa jugaa sayangg babyy 💖</button>
+  </div>
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
